@@ -20,10 +20,10 @@
       "symbol": "WildEXP",
       "name": "Wild Experiments",
       "position_usd": 5.0,
-      "entry_market_cap_usd": 24636.524458850505,
-      "last_market_cap_usd": 24636.524458850505,
+      "entry_market_cap_usd": 17953.30230047817,
+      "last_market_cap_usd": 17953.30230047817,
       "unrealized_pnl_usd": 0.0,
-      "opened_at": "2026-10-11T04:43:28.936422+00:00",
+      "opened_at": "2026-10-11T04:58:31.759309+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
@@ -57,9 +57,23 @@
       "reason": "take_profit",
       "mode": "PAPER_ONLY",
       "execution_enabled": false
+    },
+    {
+      "timestamp": "2026-10-11T04:58:31.759309+00:00",
+      "event": "PAPER_EXIT",
+      "mint": "BXXbJrJv8ZZikNBVEYqkrNHvoxFhiLcQhTyCBMzTpump",
+      "symbol": "WildEXP",
+      "position_usd": 5.0,
+      "entry_market_cap_usd": 24636.524458850505,
+      "exit_market_cap_usd": 17953.30230047817,
+      "pnl_pct": -0.271273,
+      "pnl_usd_proxy": -1.3564,
+      "reason": "stop_loss",
+      "mode": "PAPER_ONLY",
+      "execution_enabled": false
     }
   ],
-  "last_cycle": "2026-10-11T04:43:28.936422+00:00",
+  "last_cycle": "2026-10-11T04:58:31.759309+00:00",
   "execution_enabled": false,
   "budget_reference_usd": 50.0,
   "reserve_usd": 5.0,
