@@ -35,8 +35,13 @@ def main():
     wallet = os.getenv("SOLANA_PUBLIC_WALLET", "").strip() or "D7we1ffz6S5WkqhNCzLy4REoE1MojT33hZRwmeW7LhiU"
     event = {"timestamp": now, "profile": PROFILE, "mode": "READ_ONLY_PAPER", "execution_enabled": False}
     try:
-        coins = request_json(f"{PUMP_BASE}/coins/latest?limit=50&offset=0&includeNsfw=false")
-        trades = request_json(f"{PUMP_BASE}/trades/latest")
+        coins = request_json(f"{PUMP_BASE}/coins/currently-live?limit=50&offset=0&includeNsfw=false")
+        trades = None
+        trades_error = None
+        try:
+            trades = request_json(f"{PUMP_BASE}/trades/latest")
+        except Exception as exc:
+            trades_error = str(exc)[:300]
         balance_lamports = None
         balance_error = None
         if wallet:
@@ -65,13 +70,15 @@ def main():
             "wallet_balance_error": balance_error,
             "coins_latest": coins,
             "trades_latest": trades,
+            "trades_error": trades_error,
         }
         (DATA / "latest.json").write_text(json.dumps(snapshot, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         event.update({
             "status": "ok",
             "wallet_balance_available": balance_lamports is not None,
             "coins_payload_type": type(coins).__name__,
-            "trades_payload_type": type(trades).__name__,
+            "trades_payload_type": type(trades).__name__ if trades is not None else "unavailable",
+            "trades_error": trades_error,
             "execution_enabled": False
         })
         append_jsonl(DATA / "events.jsonl", event)
