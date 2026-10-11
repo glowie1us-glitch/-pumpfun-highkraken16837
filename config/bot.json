@@ -1,12 +1,17 @@
 {
   "profile": "@highkraken16837",
   "network": "solana-mainnet",
-  "mode": "read_only_paper",
+  "mode": "paper_trading",
+  "paper_trading_enabled": true,
   "execution_enabled": false,
   "wallet_public_address": "D7we1ffz6S5WkqhNCzLy4REoE1MojT33hZRwmeW7LhiU",
   "budget_reference_usd": 50,
   "risk": {
     "max_trades_per_cycle": 1,
+    "paper_position_usd": 5,
+    "paper_take_profit_pct": 0.10,
+    "paper_stop_loss_pct": -0.08,
+    "paper_max_hold_hours": 24,
     "reserve_usd": 5,
     "max_operating_budget_usd": 45,
     "max_trade_sol": null,
