@@ -1,0 +1,27 @@
+{
+  "mode": "PAPER_ONLY",
+  "cash_usd": 50.0,
+  "open_positions": {
+    "N7QjpjKRTJBGvv7E2RninctAhmT3ETZ72DAv538pump": {
+      "mint": "N7QjpjKRTJBGvv7E2RninctAhmT3ETZ72DAv538pump",
+      "symbol": "Percy",
+      "name": "Elon's Dog",
+      "position_usd": 5.0,
+      "entry_market_cap_usd": 9416.384638711332,
+      "last_market_cap_usd": 9416.384638711332,
+      "unrealized_pnl_usd": 0.0,
+      "opened_at": "2026-10-11T03:44:01.498390+00:00",
+      "mode": "PAPER_ONLY",
+      "execution_enabled": false,
+      "price_basis": "usd_market_cap_proxy"
+    }
+  },
+  "closed_positions": [],
+  "last_cycle": "2026-10-11T03:44:01.498390+00:00",
+  "execution_enabled": false,
+  "budget_reference_usd": 50.0,
+  "reserve_usd": 5.0,
+  "max_operating_budget_usd": 45.0,
+  "open_exposure_usd": 5.0,
+  "available_operating_budget_usd": 40.0
+}
