@@ -106,15 +106,15 @@
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
     },
-    "5D3Nafx9SV2TNd6KLmnyWi71QQTGZaGJBAqghk4Tpump": {
-      "mint": "5D3Nafx9SV2TNd6KLmnyWi71QQTGZaGJBAqghk4Tpump",
-      "symbol": "FIJI LABS",
-      "name": "FIJI",
+    "EGMxpMaatCfGYKNyo7vZtuEmEGnjMQQkxR1JjTN4pump": {
+      "mint": "EGMxpMaatCfGYKNyo7vZtuEmEGnjMQQkxR1JjTN4pump",
+      "symbol": "POOLNINJA",
+      "name": "Pool Ninja",
       "position_usd": 5.0,
-      "entry_market_cap_usd": 24772.62520406815,
-      "last_market_cap_usd": 26102.02007807928,
-      "unrealized_pnl_usd": 0.2683,
-      "opened_at": "2026-10-11T15:07:07.497545+00:00",
+      "entry_market_cap_usd": 5164.908877870031,
+      "last_market_cap_usd": 5164.908877870031,
+      "unrealized_pnl_usd": 0.0,
+      "opened_at": "2026-10-11T17:08:34.359045+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
@@ -372,9 +372,23 @@
       "reason": "stop_loss",
       "mode": "PAPER_ONLY",
       "execution_enabled": false
+    },
+    {
+      "timestamp": "2026-10-11T17:08:34.359045+00:00",
+      "event": "PAPER_EXIT",
+      "mint": "5D3Nafx9SV2TNd6KLmnyWi71QQTGZaGJBAqghk4Tpump",
+      "symbol": "FIJI LABS",
+      "position_usd": 5.0,
+      "entry_market_cap_usd": 24772.62520406815,
+      "exit_market_cap_usd": 22198.534429901112,
+      "pnl_pct": -0.103909,
+      "pnl_usd_proxy": -0.5195,
+      "reason": "stop_loss",
+      "mode": "PAPER_ONLY",
+      "execution_enabled": false
     }
   ],
-  "last_cycle": "2026-10-11T16:55:32.047418+00:00",
+  "last_cycle": "2026-10-11T17:08:34.359045+00:00",
   "execution_enabled": false,
   "budget_reference_usd": 50.0,
   "reserve_usd": 5.0,
