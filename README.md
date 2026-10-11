@@ -1,41 +1,48 @@
 # Pump.fun HighKraken Bot
 
-Project for the Pump.fun profile **@highkraken16837**, with GitHub-hosted public-data monitoring, an audit trail, and a paper-trading framework inspired by the six-agent dashboard in the reference video.
+Project for Pump.fun **@highkraken16837**. This repository runs public market monitoring and **paper trading only**. It does not sign transactions or place real orders.
 
-## Current implementation scope
+## Current status
 
-- Poll public Pump.fun market endpoints and save timestamped snapshots.
-- Store run status, errors, watched coins, and simulated trade decisions in the repository.
-- Run on a GitHub Actions schedule and manually from the Actions tab.
-- Provide a six-agent pipeline: SCOUT (new tokens), TAPE (trades/volume), WALLET (public-address monitor), RISK (hard limits), EXECUTOR (paper-trade only), AUDITOR (logs and review).
-- **Live trading is disabled and no transaction signing is implemented in this starter.** This prevents an accidental trade before the new wallet and strategy are explicitly configured and reviewed.
+- Paper simulator: enabled.
+- Live trading: disabled (`execution_enabled: false`).
+- Public wallet monitored: `D7we1ffz6S5WkqhNCzLy4REoE1MojT33hZRwmeW7LhiU`.
+- Reference budget: $50; protected reserve: $5; maximum paper operating allocation: $45.
+- Paper position size: $5; maximum one new simulated entry per cycle.
+- Paper take-profit threshold: +10%; stop threshold: -8%; time limit: 24 hours.
+- Market-cap proxy P&L is approximate and is **not** a real executable quote or real trading performance.
 
-## Pump.fun profile
+## Workflow
 
-Configured handle: `@highkraken16837`
+The GitHub Actions workflow runs every 15 minutes and can be started manually:
 
-This is project metadata only. It does not prove account ownership or create a Pump.fun OAuth connection. Use Pump.fun's official sign-in/account settings to verify the profile.
+1. Poll public Pump.fun currently-live coins.
+2. Query the public Solana RPC for the configured wallet's SOL balance.
+3. Run the paper simulator against the market snapshot.
+4. Commit snapshots and simulation state.
 
-## Setup
+Open **Actions → Pump.fun public monitor → Run workflow**:
+https://github.com/glowie1us-glitch/-pumpfun-highkraken16837/actions
 
-1. Open **Settings → Actions → General** and permit read/write repository contents so the scheduled workflow can commit snapshots.
-2. Open **Actions → Pump.fun public monitor → Run workflow** for a manual run.
-3. Inspect `data/latest.json`, `data/events.jsonl`, and `data/paper_trades.jsonl`.
-4. Scheduled runs are configured every 15 minutes. GitHub may delay scheduled Actions.
-5. Optional GitHub Actions variable `SOLANA_PUBLIC_WALLET`: the public address to watch. Leave blank until the intended alternate wallet is chosen. Never add a seed phrase or private key.
+The public trades endpoint currently returns 404 in the tested route. That data is marked unavailable; the monitor does not invent trade data.
 
-## Reference-video dashboard mapping
+## Files
 
-- Top metrics: public wallet balance, simulated P&L, paper win rate, observed signals.
-- Left panels: balance snapshots, public market/trade feed, and errors.
-- Six-agent network: SCOUT, TAPE, WALLET, RISK, EXECUTOR, AUDITOR.
-- Activity log and risk guard.
-- Metrics are shown as unavailable until backed by actual collected data; no demo profit values are fabricated.
+- `config/bot.json`: public profile metadata, wallet, risk limits, and six agent roles.
+- `scripts/monitor.py`: public market and wallet monitoring.
+- `scripts/paper_trader.py`: simulated entry/exit logic only.
+- `data/latest.json`: last market and wallet snapshot.
+- `data/paper_summary.json`: last simulation summary.
+- `data/paper_state.json`: open paper positions and simulation balance state.
+- `data/paper_trades.jsonl`: simulated entries and exits.
+- `data/events.jsonl`: monitor audit events.
 
-## Live trading gate
+## Paper strategy filters
 
-Before live execution is considered, explicitly select the alternate public wallet and define max amount per trade, daily loss cap, slippage limit, token/liquidity filters, and whether every trade needs manual approval. Keep signing keys outside GitHub source/history; never put them in commits, issues, logs, or chat. Start in paper mode and verify all risk checks before considering any real transaction.
+The starter simulator only considers coins from the public currently-live feed, excludes coins marked complete, banned, or NSFW, requires a market-cap proxy between $5,000 and $30,000, and requires at least 5 SOL of real reserves. It records at most one $5 simulated entry per cycle and uses a 10% take-profit / 8% stop-loss / 24-hour time limit.
 
-## Data source
+This is a testing harness, not a proven profitable strategy. Market-cap changes are used as a proxy, so the simulation ignores real swap price, bonding-curve execution, fees, slippage, priority fees, and failed transactions. Do not interpret paper P&L as expected live P&L.
 
-The monitor uses Pump.fun's public frontend API for read-only discovery. This is an undocumented frontend interface and may change or rate-limit requests. API failures are logged; they never trigger a transaction.
+## Live trading
+
+Real trading is not implemented or enabled. Keep it disabled while testing. Before any live executor is designed, independently validate the data source and strategy, define max daily loss and slippage, and use a secure signing arrangement. Never put a seed phrase or private key in this repository, GitHub variables, issues, or chat.
