@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-11T08:29:55.249438+00:00",
+  "timestamp": "2026-10-11T08:48:29.270970+00:00",
   "mode": "PAPER_ONLY",
   "execution_enabled": false,
   "coins_seen": 50,
-  "events_this_cycle": 1,
+  "events_this_cycle": 2,
   "new_entries": 1,
   "open_positions": 7,
   "open_exposure_usd": 35.0,
