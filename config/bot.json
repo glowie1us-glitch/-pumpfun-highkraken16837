@@ -1,0 +1,23 @@
+{
+  "profile": "@highkraken16837",
+  "network": "solana-mainnet",
+  "mode": "read_only_paper",
+  "execution_enabled": false,
+  "wallet_public_address": "",
+  "risk": {
+    "max_trades_per_cycle": 1,
+    "reserve_sol": null,
+    "max_trade_sol": null,
+    "max_daily_loss_sol": null,
+    "max_slippage_bps": null,
+    "require_manual_approval": true
+  },
+  "agents": [
+    {"id": "SCOUT", "role": "Discover new Pump.fun coins", "mode": "read_only"},
+    {"id": "TAPE", "role": "Track recent trades and activity", "mode": "read_only"},
+    {"id": "WALLET", "role": "Monitor the configured public wallet", "mode": "read_only"},
+    {"id": "RISK", "role": "Reject ideas that fail configured risk filters", "mode": "guard"},
+    {"id": "EXECUTOR", "role": "Record paper entries and exits only", "mode": "paper_only"},
+    {"id": "AUDITOR", "role": "Write event logs and summaries", "mode": "audit"}
+  ]
+}
