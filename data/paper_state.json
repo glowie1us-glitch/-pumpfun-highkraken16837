@@ -15,19 +15,6 @@
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
     },
-    "EQvmr2pR3vQF9d6hB95usxLWH3nYWVu8Bsq3V3PApump": {
-      "mint": "EQvmr2pR3vQF9d6hB95usxLWH3nYWVu8Bsq3V3PApump",
-      "symbol": "DONAWLD",
-      "name": "Donawld Live",
-      "position_usd": 5.0,
-      "entry_market_cap_usd": 9608.820506959593,
-      "last_market_cap_usd": 8842.235507250187,
-      "unrealized_pnl_usd": -0.3989,
-      "opened_at": "2026-10-11T05:15:09.560298+00:00",
-      "mode": "PAPER_ONLY",
-      "execution_enabled": false,
-      "price_basis": "usd_market_cap_proxy"
-    },
     "xX7vwv4xDJBr93aufmgdvvV5X4r1boQDGmveChWpump": {
       "mint": "xX7vwv4xDJBr93aufmgdvvV5X4r1boQDGmveChWpump",
       "symbol": "negon",
@@ -47,8 +34,8 @@
       "name": "OnlyAI",
       "position_usd": 5.0,
       "entry_market_cap_usd": 5680.185803217034,
-      "last_market_cap_usd": 5697.883619399704,
-      "unrealized_pnl_usd": 0.0156,
+      "last_market_cap_usd": 5685.120599665033,
+      "unrealized_pnl_usd": 0.0043,
       "opened_at": "2026-10-11T06:13:54.852347+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
@@ -86,22 +73,9 @@
       "name": "Unhelpful",
       "position_usd": 5.0,
       "entry_market_cap_usd": 17641.393012018496,
-      "last_market_cap_usd": 17609.293777631156,
-      "unrealized_pnl_usd": -0.0091,
+      "last_market_cap_usd": 17607.823502385076,
+      "unrealized_pnl_usd": -0.0095,
       "opened_at": "2026-10-11T09:08:49.462765+00:00",
-      "mode": "PAPER_ONLY",
-      "execution_enabled": false,
-      "price_basis": "usd_market_cap_proxy"
-    },
-    "BXXbJrJv8ZZikNBVEYqkrNHvoxFhiLcQhTyCBMzTpump": {
-      "mint": "BXXbJrJv8ZZikNBVEYqkrNHvoxFhiLcQhTyCBMzTpump",
-      "symbol": "WildEXP",
-      "name": "Wild Experiments",
-      "position_usd": 5.0,
-      "entry_market_cap_usd": 15195.472338381493,
-      "last_market_cap_usd": 14229.210216695068,
-      "unrealized_pnl_usd": -0.3179,
-      "opened_at": "2026-10-11T09:28:25.519234+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
@@ -115,6 +89,19 @@
       "last_market_cap_usd": 17406.094058554703,
       "unrealized_pnl_usd": 0.0,
       "opened_at": "2026-10-11T09:46:20.300063+00:00",
+      "mode": "PAPER_ONLY",
+      "execution_enabled": false,
+      "price_basis": "usd_market_cap_proxy"
+    },
+    "7zXgB89wuT69z1egcn54mFg9pQ5wQBeh6UFEhJBdpump": {
+      "mint": "7zXgB89wuT69z1egcn54mFg9pQ5wQBeh6UFEhJBdpump",
+      "symbol": "CODEBARA",
+      "name": "Codebara Town",
+      "position_usd": 5.0,
+      "entry_market_cap_usd": 7898.088138677354,
+      "last_market_cap_usd": 7898.088138677354,
+      "unrealized_pnl_usd": 0.0,
+      "opened_at": "2026-10-11T10:27:26.016002+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
@@ -274,13 +261,41 @@
       "reason": "take_profit",
       "mode": "PAPER_ONLY",
       "execution_enabled": false
+    },
+    {
+      "timestamp": "2026-10-11T10:27:26.016002+00:00",
+      "event": "PAPER_EXIT",
+      "mint": "EQvmr2pR3vQF9d6hB95usxLWH3nYWVu8Bsq3V3PApump",
+      "symbol": "DONAWLD",
+      "position_usd": 5.0,
+      "entry_market_cap_usd": 9608.820506959593,
+      "exit_market_cap_usd": 8647.653668487761,
+      "pnl_pct": -0.10003,
+      "pnl_usd_proxy": -0.5001,
+      "reason": "stop_loss",
+      "mode": "PAPER_ONLY",
+      "execution_enabled": false
+    },
+    {
+      "timestamp": "2026-10-11T10:27:26.016002+00:00",
+      "event": "PAPER_EXIT",
+      "mint": "BXXbJrJv8ZZikNBVEYqkrNHvoxFhiLcQhTyCBMzTpump",
+      "symbol": "WildEXP",
+      "position_usd": 5.0,
+      "entry_market_cap_usd": 15195.472338381493,
+      "exit_market_cap_usd": 12738.95094222133,
+      "pnl_pct": -0.161661,
+      "pnl_usd_proxy": -0.8083,
+      "reason": "stop_loss",
+      "mode": "PAPER_ONLY",
+      "execution_enabled": false
     }
   ],
-  "last_cycle": "2026-10-11T10:08:19.498932+00:00",
+  "last_cycle": "2026-10-11T10:27:26.016002+00:00",
   "execution_enabled": false,
   "budget_reference_usd": 50.0,
   "reserve_usd": 5.0,
   "max_operating_budget_usd": 45.0,
-  "open_exposure_usd": 45.0,
-  "available_operating_budget_usd": 0.0
+  "open_exposure_usd": 40.0,
+  "available_operating_budget_usd": 5.0
 }
