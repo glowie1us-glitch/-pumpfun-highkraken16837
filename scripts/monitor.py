@@ -32,7 +32,7 @@ def append_jsonl(path: Path, item: dict):
 
 def main():
     now = datetime.now(timezone.utc).isoformat()
-    wallet = os.getenv("SOLANA_PUBLIC_WALLET", "D7we1ffz6S5WkqhNCzLy4REoE1MojT33hZRwmeW7LhiU").strip()
+    wallet = os.getenv("SOLANA_PUBLIC_WALLET", "").strip() or "D7we1ffz6S5WkqhNCzLy4REoE1MojT33hZRwmeW7LhiU"
     event = {"timestamp": now, "profile": PROFILE, "mode": "READ_ONLY_PAPER", "execution_enabled": False}
     try:
         coins = request_json(f"{PUMP_BASE}/coins/latest?limit=50&offset=0&includeNsfw=false")
