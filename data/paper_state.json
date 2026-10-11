@@ -21,8 +21,8 @@
       "name": "Neegyeon",
       "position_usd": 5.0,
       "entry_market_cap_usd": 7893.200526690923,
-      "last_market_cap_usd": 7899.180339743938,
-      "unrealized_pnl_usd": 0.0038,
+      "last_market_cap_usd": 7905.47959172629,
+      "unrealized_pnl_usd": 0.0078,
       "opened_at": "2026-10-11T05:56:14.243304+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
@@ -388,7 +388,7 @@
       "execution_enabled": false
     }
   ],
-  "last_cycle": "2026-10-11T20:27:54.723069+00:00",
+  "last_cycle": "2026-10-11T20:45:14.118427+00:00",
   "execution_enabled": false,
   "budget_reference_usd": 50.0,
   "reserve_usd": 5.0,
