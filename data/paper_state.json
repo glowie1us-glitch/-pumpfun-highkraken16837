@@ -112,8 +112,8 @@
       "name": "FIJI",
       "position_usd": 5.0,
       "entry_market_cap_usd": 24772.62520406815,
-      "last_market_cap_usd": 25656.927176086836,
-      "unrealized_pnl_usd": 0.1785,
+      "last_market_cap_usd": 26102.02007807928,
+      "unrealized_pnl_usd": 0.2683,
       "opened_at": "2026-10-11T15:07:07.497545+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
@@ -374,7 +374,7 @@
       "execution_enabled": false
     }
   ],
-  "last_cycle": "2026-10-11T16:30:39.160834+00:00",
+  "last_cycle": "2026-10-11T16:55:32.047418+00:00",
   "execution_enabled": false,
   "budget_reference_usd": 50.0,
   "reserve_usd": 5.0,
