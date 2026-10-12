@@ -106,15 +106,15 @@
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
     },
-    "PumpW47catDY5HNViYW6utM2siDD76KNmFXTJHGGUYS": {
-      "mint": "PumpW47catDY5HNViYW6utM2siDD76KNmFXTJHGGUYS",
-      "symbol": "PUMPGUYS",
-      "name": "Pump Guys",
+    "CvQLibaUh4ZLJ5mJxgSGRexD3Rs5vWguPpwfAPj7pump": {
+      "mint": "CvQLibaUh4ZLJ5mJxgSGRexD3Rs5vWguPpwfAPj7pump",
+      "symbol": "WORMHOLE",
+      "name": "Worm Hole Index",
       "position_usd": 5.0,
-      "entry_market_cap_usd": 16959.952829630012,
-      "last_market_cap_usd": 16959.952829630012,
+      "entry_market_cap_usd": 7652.299532458552,
+      "last_market_cap_usd": 7652.299532458552,
       "unrealized_pnl_usd": 0.0,
-      "opened_at": "2026-10-12T13:17:54.507467+00:00",
+      "opened_at": "2026-10-12T13:57:04.672134+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
@@ -470,9 +470,23 @@
       "reason": "take_profit",
       "mode": "PAPER_ONLY",
       "execution_enabled": false
+    },
+    {
+      "timestamp": "2026-10-12T13:57:04.672134+00:00",
+      "event": "PAPER_EXIT",
+      "mint": "PumpW47catDY5HNViYW6utM2siDD76KNmFXTJHGGUYS",
+      "symbol": "PUMPGUYS",
+      "position_usd": 5.0,
+      "entry_market_cap_usd": 16959.952829630012,
+      "exit_market_cap_usd": 20121.157822429894,
+      "pnl_pct": 0.186392,
+      "pnl_usd_proxy": 0.932,
+      "reason": "take_profit",
+      "mode": "PAPER_ONLY",
+      "execution_enabled": false
     }
   ],
-  "last_cycle": "2026-10-12T13:17:54.507467+00:00",
+  "last_cycle": "2026-10-12T13:57:04.672134+00:00",
   "execution_enabled": false,
   "budget_reference_usd": 50.0,
   "reserve_usd": 5.0,
