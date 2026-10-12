@@ -15,19 +15,6 @@
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
     },
-    "DaKG12zq7UfwDSdUn7ADqktX7d22r5NZMjyzGPe3pump": {
-      "mint": "DaKG12zq7UfwDSdUn7ADqktX7d22r5NZMjyzGPe3pump",
-      "symbol": "Mira",
-      "name": "OnlyAI",
-      "position_usd": 5.0,
-      "entry_market_cap_usd": 5680.185803217034,
-      "last_market_cap_usd": 5681.2241593963945,
-      "unrealized_pnl_usd": 0.0009,
-      "opened_at": "2026-10-11T06:13:54.852347+00:00",
-      "mode": "PAPER_ONLY",
-      "execution_enabled": false,
-      "price_basis": "usd_market_cap_proxy"
-    },
     "62cWusJywPQRHYPq499iWTAXuLW4qz2kaYx58w1Bpump": {
       "mint": "62cWusJywPQRHYPq499iWTAXuLW4qz2kaYx58w1Bpump",
       "symbol": "MODDER",
@@ -99,8 +86,8 @@
       "name": "Fapping Monkey",
       "position_usd": 5.0,
       "entry_market_cap_usd": 6589.1728283995135,
-      "last_market_cap_usd": 6534.206399976042,
-      "unrealized_pnl_usd": -0.0417,
+      "last_market_cap_usd": 6443.317137624721,
+      "unrealized_pnl_usd": -0.1107,
       "opened_at": "2026-10-12T02:45:06.911096+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
@@ -115,6 +102,19 @@
       "last_market_cap_usd": 7400.80957164864,
       "unrealized_pnl_usd": 0.1314,
       "opened_at": "2026-10-12T10:22:26.907890+00:00",
+      "mode": "PAPER_ONLY",
+      "execution_enabled": false,
+      "price_basis": "usd_market_cap_proxy"
+    },
+    "C3Pb26EPdKnjyoik4A5dN1LcePb2wjti2o3L4F8Bpump": {
+      "mint": "C3Pb26EPdKnjyoik4A5dN1LcePb2wjti2o3L4F8Bpump",
+      "symbol": "HHOOD",
+      "name": "HoldHood",
+      "position_usd": 5.0,
+      "entry_market_cap_usd": 8260.208769840046,
+      "last_market_cap_usd": 8260.208769840046,
+      "unrealized_pnl_usd": 0.0,
+      "opened_at": "2026-10-12T11:59:26.194226+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
@@ -428,9 +428,23 @@
       "reason": "stop_loss",
       "mode": "PAPER_ONLY",
       "execution_enabled": false
+    },
+    {
+      "timestamp": "2026-10-12T11:59:26.194226+00:00",
+      "event": "PAPER_EXIT",
+      "mint": "DaKG12zq7UfwDSdUn7ADqktX7d22r5NZMjyzGPe3pump",
+      "symbol": "Mira",
+      "position_usd": 5.0,
+      "entry_market_cap_usd": 5680.185803217034,
+      "exit_market_cap_usd": 6816.252469201754,
+      "pnl_pct": 0.200005,
+      "pnl_usd_proxy": 1.0,
+      "reason": "take_profit",
+      "mode": "PAPER_ONLY",
+      "execution_enabled": false
     }
   ],
-  "last_cycle": "2026-10-12T11:34:22.019284+00:00",
+  "last_cycle": "2026-10-12T11:59:26.194226+00:00",
   "execution_enabled": false,
   "budget_reference_usd": 50.0,
   "reserve_usd": 5.0,
