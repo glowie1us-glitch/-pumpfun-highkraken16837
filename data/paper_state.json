@@ -106,15 +106,15 @@
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
     },
-    "6EKgoTQpqrjfhDc8bBw61h3ffh4sc1ns3t1bWEQQtEsS": {
-      "mint": "6EKgoTQpqrjfhDc8bBw61h3ffh4sc1ns3t1bWEQQtEsS",
-      "symbol": "QTESS",
-      "name": "Quantessa",
+    "Ha6JeiFugEhZRRjx7N8KWfA3AY8Jnstuwapk6gi7pump": {
+      "mint": "Ha6JeiFugEhZRRjx7N8KWfA3AY8Jnstuwapk6gi7pump",
+      "symbol": "PROPZ",
+      "name": "Propz",
       "position_usd": 5.0,
-      "entry_market_cap_usd": 16602.582076818228,
-      "last_market_cap_usd": 16842.11295999689,
-      "unrealized_pnl_usd": 0.0721,
-      "opened_at": "2026-10-12T09:34:03.735322+00:00",
+      "entry_market_cap_usd": 7211.233247648157,
+      "last_market_cap_usd": 7211.233247648157,
+      "unrealized_pnl_usd": 0.0,
+      "opened_at": "2026-10-12T10:22:26.907890+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
       "price_basis": "usd_market_cap_proxy"
@@ -414,9 +414,23 @@
       "reason": "time_limit",
       "mode": "PAPER_ONLY",
       "execution_enabled": false
+    },
+    {
+      "timestamp": "2026-10-12T10:22:26.907890+00:00",
+      "event": "PAPER_EXIT",
+      "mint": "6EKgoTQpqrjfhDc8bBw61h3ffh4sc1ns3t1bWEQQtEsS",
+      "symbol": "QTESS",
+      "position_usd": 5.0,
+      "entry_market_cap_usd": 16602.582076818228,
+      "exit_market_cap_usd": 15048.92047480525,
+      "pnl_pct": -0.09358,
+      "pnl_usd_proxy": -0.4679,
+      "reason": "stop_loss",
+      "mode": "PAPER_ONLY",
+      "execution_enabled": false
     }
   ],
-  "last_cycle": "2026-10-12T10:00:00.266554+00:00",
+  "last_cycle": "2026-10-12T10:22:26.907890+00:00",
   "execution_enabled": false,
   "budget_reference_usd": 50.0,
   "reserve_usd": 5.0,
