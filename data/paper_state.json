@@ -86,8 +86,8 @@
       "name": "Fapping Monkey",
       "position_usd": 5.0,
       "entry_market_cap_usd": 6589.1728283995135,
-      "last_market_cap_usd": 6383.527799305784,
-      "unrealized_pnl_usd": -0.156,
+      "last_market_cap_usd": 6361.808815196521,
+      "unrealized_pnl_usd": -0.1725,
       "opened_at": "2026-10-12T02:45:06.911096+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
@@ -486,7 +486,7 @@
       "execution_enabled": false
     }
   ],
-  "last_cycle": "2026-10-12T14:19:23.791755+00:00",
+  "last_cycle": "2026-10-12T14:49:57.975581+00:00",
   "execution_enabled": false,
   "budget_reference_usd": 50.0,
   "reserve_usd": 5.0,
