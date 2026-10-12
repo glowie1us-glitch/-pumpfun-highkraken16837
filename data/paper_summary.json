@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-12T02:15:27.240939+00:00",
+  "timestamp": "2026-10-12T02:45:06.911096+00:00",
   "mode": "PAPER_ONLY",
   "execution_enabled": false,
   "coins_seen": 50,
-  "events_this_cycle": 0,
-  "new_entries": 0,
+  "events_this_cycle": 2,
+  "new_entries": 1,
   "open_positions": 9,
   "open_exposure_usd": 45.0,
   "available_operating_budget_usd": 0.0,
