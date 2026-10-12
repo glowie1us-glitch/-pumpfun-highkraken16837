@@ -60,8 +60,8 @@
       "name": "Unhelpful",
       "position_usd": 5.0,
       "entry_market_cap_usd": 17641.393012018496,
-      "last_market_cap_usd": 18144.207155690685,
-      "unrealized_pnl_usd": 0.1425,
+      "last_market_cap_usd": 18195.018186729245,
+      "unrealized_pnl_usd": 0.1569,
       "opened_at": "2026-10-11T09:08:49.462765+00:00",
       "mode": "PAPER_ONLY",
       "execution_enabled": false,
@@ -402,7 +402,7 @@
       "execution_enabled": false
     }
   ],
-  "last_cycle": "2026-10-12T04:59:05.211940+00:00",
+  "last_cycle": "2026-10-12T05:19:02.357397+00:00",
   "execution_enabled": false,
   "budget_reference_usd": 50.0,
   "reserve_usd": 5.0,
